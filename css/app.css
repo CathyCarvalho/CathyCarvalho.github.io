@@ -1,0 +1,150 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.hamburger-menu {
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #ff6f61; 
+    margin: 4px 0;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    transition: left 0.3s ease;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 50px 0; 
+}
+
+.menu ul li {
+    padding: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu ul li a:hover {
+    color: #ff6f61;
+}
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 80%; 
+    margin-left: auto; 
+}
+
+.profile img {
+    width: 35%;
+    height: 350px;
+    border-radius: 50%;
+    margin-left: 50px; 
+    margin-bottom: 10px;
+}
+
+.bio {
+    text-align: left;
+    width: 50%; 
+}
+
+.bio h1 {
+    margin-bottom: 10px;
+}
+
+.bio p {
+    margin: 0;
+}
+
+.bio p img {
+    display: inline-block; 
+    margin: 0 5px; 
+}
+
+.bio p:first-child {
+    text-align: center; 
+}
+
+.fancy-intro {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.fancy-intro strong {
+    font-weight: bold;
+    font-size: 28px;
+    font-style: italic;
+    color: #ff6f61; 
+}
+
+.bio strong {
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8; 
+    padding: 10px 0; 
+    text-align: center;
+}
+
+footer p {
+    margin: 0; 
+}
+
+.bio img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px; 
+}
+
+.bio .logo-container {
+    text-align: center; 
+}
+
+.bio .logo-container img {
+    margin: 0 5px;
+}
