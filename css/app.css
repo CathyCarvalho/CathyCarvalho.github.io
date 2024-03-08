@@ -69,9 +69,15 @@ body, html {
 
 .profile {
     display: flex;
-    align-items: center;
-    width: 80%; 
-    margin-left: auto; 
+    justify-content: center; 
+    align-items: center; 
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.bio {
+    text-align: left;
+    width: 50%;
 }
 
 .profile img {
@@ -80,11 +86,6 @@ body, html {
     border-radius: 50%;
     margin-left: 50px; 
     margin-bottom: 10px;
-}
-
-.bio {
-    text-align: left;
-    width: 50%; 
 }
 
 .bio h1 {
@@ -147,4 +148,8 @@ footer p {
 
 .bio .logo-container img {
     margin: 0 5px;
+}
+.heart {
+    color: #ff6f61; 
+    display: inline-block;
 }
